@@ -1,0 +1,298 @@
+/* ************************************************************************* */
+/* ************************************************************************* */
+/* 
+    Mobile-first design
+*/
+/* ************************************************************************* */
+/* ************************************************************************* */
+
+/* @media only screen and (max-width: 600px) {
+
+} */
+
+/* @media only screen and (max-width: 600px) and (min-width: 768px) { */
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        font-size: 20px;
+        /* background: #ddd; */
+        /* min-width: 600px; */
+    }
+
+    body {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        min-width: 600px;
+    }
+
+    .logo {
+        height: 3rem;
+    }
+
+    .socials {
+        display: flex;
+    }
+
+    .social {
+        height: 50px;
+        margin: 6px;
+        background: #ddd;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+    }
+
+    .social:hover {
+        background: white;
+        border: 3px solid #007CC7;
+        transition: all 0.2s ease;
+    }
+
+    span {
+        color: #3c92c7;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        min-width: 600px;
+        background: #001420;
+        color: #dddddd;
+        height: 100vh;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
+    } 
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    nav li {
+        margin: 0 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #ddd;
+    }
+
+    nav a:hover  {
+        color: #3c92c7;
+        transition: all ease-in 0.2s;
+        text-decoration: underline;
+    }
+
+    .button a {
+        text-decoration: none;
+        color: #ddd;
+    }
+    
+    .button {
+        width: 7rem;
+        /* text-align: center; */       
+        padding: 0.5rem 1rem;
+        background: #007CC7;
+        color: #ddd;
+        border-radius: 40px;
+    }
+
+    .button:hover {
+        background: #3c92c7;
+        transition: all ease-in 0.2s;
+    }
+
+    .heroArea {
+        margin: 7rem 0 0 0;
+        padding: 0 5%;
+        order: 1;
+    }
+
+    .heroArea a {
+        font-size: 1rem;
+    }
+
+    .heroArea h1 {
+        animation: typewriter 2s steps(12) 1s 1 normal both,
+        blinkTextCursor 0.8s steps(12) infinite normal;
+        overflow: hidden;
+        color: #007CC7;
+        border-right: 2px solid #dddddd;
+        white-space: nowrap;
+        transform: translateY(-50%);
+        width: 12.8rem;
+        font-family: monospace;
+        margin-left: 1rem;
+        font-size: 57px;
+    }
+    
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 412px;
+        }
+    }
+    
+    @keyframes blinkTextCursor {
+        from {
+            border-right-color: #dddddd;
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
+
+    .introText {
+        font-size: 1rem;
+        padding-left: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .button {
+        margin-top: 1rem;
+    }
+
+    .projectContainer {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .projectCard {
+        border: 1px solid black;
+        padding: 1rem;
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        box-shadow: 5px 5px 20px rgb(180, 180, 180);
+        border-radius: 10px;
+        text-decoration: none;
+        color: #001420;
+        margin: 1rem 0;
+    }
+
+    .projectCard h3 {
+        height: 5rem
+    }
+
+    .projectImg {
+        width: 8rem;
+        border-radius: 5px;
+    }
+
+    .projectCard:hover {
+        background-color: rgb(236, 236, 236);
+        transition: 0.3s ease;
+    }
+
+    .projectCard p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .section {
+        line-height: 1.5rem;
+        padding: 1rem;
+        background: #ddd;
+        color: #001420;
+        min-width: 600px;
+    }
+
+    .aboutSection p {
+        max-width: 768px;
+    }
+
+    .resume {
+        color: #007CC7;
+    }
+
+    .resume:hover {
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.5s ease;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .email {
+        color: #007CC7
+    }
+    
+    footer {
+        background: #001420;
+        color: #dddddd80 ;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        min-width: 600px;
+    }
+/* } */
+
+@media screen and (min-width: 768px) {
+    
+    .socials {
+        position: fixed;
+        left: 90%;
+        right: 1%;
+        top: 25%;
+        bottom: 0;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+        padding: 1rem 0 0 0;
+    }
+
+    .section h3 {
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+    
+    .heroArea {
+        padding: 0 10%;
+    }
+
+    .section {
+        box-sizing: border-box;
+        padding: 1% 10%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
